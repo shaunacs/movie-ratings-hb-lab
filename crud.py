@@ -26,6 +26,13 @@ def create_movie(title, overview, release_date, poster_path):
     return movie
 
 
+def view_all_movies(movies):
+    """Allow user to view all movies in movies table"""
+
+    return Movie.query.all()
+
+
+
 def create_rating(user, movie, score):
     """Create and return a rating for a movie by a user"""
 
